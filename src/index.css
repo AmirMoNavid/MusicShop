@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+  height: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+* {
+  outline: none;
+}
+body {
+  /* padding-bottom: 10px; */
+
+  background: linear-gradient(90deg, rgb(41 41 41) 0%, rgb(0 0 0) 91%);
+  height: 100vh;
+  overflow: hidden;
+}
+.range {
+  -webkit-appearance: none;
+  background-color: transparent;
+  background-color: rgb(46 47 48);
+}
+.player {
+  /* From https://css.glass */
+  background: rgba(202, 198, 198, 0.38);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+}
+.row {
+  background-color: rgba(63, 60, 60, 0.521);
+}
+.playBox {
+  background-color: rgb(45 47 49);
+}
+.swiper-initialized {
+  padding: 5px;
+}
+.searchBox {
+  background-color: rgb(86 92 101);
+}
+
+@media (min-width: 500px) {
+  .more {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .searchBox {
+    width: 45%;
+    left: 25%;
+  }
+  .infinite {
+    padding-top: 60px;
+  }
+  .sideBar {
+    display: none;
+  }
+  .player {
+    width: 85%;
+    padding-top: 20px;
+    height: 80%;
+    position: relative;
+  }
+  .playListImg {
+    width: 50%;
+    height: 50%;
+  }
+  .detail {
+    padding-top: 12px;
+  }
+  .line {
+    width: 85%;
+  }
+  .artistImg {
+    width: 50%;
+    height: 50%;
+  }
+  .tImg {
+    padding-top: 15px;
+  }
+  .favtitle {
+    font-size: 1.2rem;
+  }
+  .pDetail {
+    padding-top: 3rem;
+  }
+}
